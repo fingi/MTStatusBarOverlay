@@ -20,7 +20,7 @@
 // -------------------------------
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 
 //===========================================================
 #pragma mark -
@@ -94,10 +94,6 @@ typedef enum MTMessageType {
 @property (nonatomic, strong) UILabel *finishedLabel;
 // if this flag is set to YES, neither activityIndicator nor finishedLabel are shown
 @property (nonatomic, assign) BOOL hidesActivity;
-// the image used when the Status Bar Style is Default
-@property (nonatomic, strong) UIImage *defaultStatusBarImage;
-// the image used when the Status Bar Style is Default and the Overlay is shrinked
-@property (nonatomic, strong) UIImage *defaultStatusBarImageShrinked;
 // detect if status bar is currently shrinked
 @property (nonatomic, readonly, getter=isShrinked) BOOL shrinked;
 // detect if detailView is currently hidden
@@ -116,7 +112,12 @@ typedef enum MTMessageType {
 @property (nonatomic, copy) NSString *detailText;
 // the delegate of the overlay
 @property (nonatomic, unsafe_unretained) id<MTStatusBarOverlayDelegate> delegate;
+
+// custom text and activity view color to override all UIStatusBarStyle and MTMessageType
 @property(nonatomic, strong) UIColor *customTextColor;
+// custom status bar overlay background color to override all UIStatusBarStyle and MTMessageType
+@property(nonatomic, strong) UIColor *customBackgroundColor;
+
 //===========================================================
 #pragma mark -
 #pragma mark Class Methods

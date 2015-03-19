@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aFQ-0U-rhW">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LWU-ZG-n0V">
+            <objects>
+                <navigationController id="aFQ-0U-rhW" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qhw-9a-U3A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JID-UO-sBU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QxH-fk-TZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="333"/>
+        </scene>
+        <!--Test MTStatusBarOverlay-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1J-T4-r3G">
+                                <rect key="frame" x="106" y="215" width="108" height="30"/>
+                                <state key="normal" title="Reconnecting...">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reconnecting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V4e-7h-f3a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqE-D3-5bn">
+                                <rect key="frame" x="124" y="270" width="73" height="30"/>
+                                <state key="normal" title="Hide Toast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideToast:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c31-Jy-MnF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bo-vs-IgJ">
+                                <rect key="frame" x="94" y="160" width="133" height="30"/>
+                                <state key="normal" title="Internet Connected">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="internetConnected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9UB-n8-kHk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12G-7Z-3X1">
+                                <rect key="frame" x="122" y="105" width="77" height="30"/>
+                                <state key="normal" title="No Internet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="noInternet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgk-fd-f6u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="12G-7Z-3X1" secondAttribute="centerX" id="3it-wJ-9ry"/>
+                            <constraint firstItem="W1J-T4-r3G" firstAttribute="top" secondItem="9bo-vs-IgJ" secondAttribute="bottom" constant="25" id="Dvc-18-MWY"/>
+                            <constraint firstItem="9bo-vs-IgJ" firstAttribute="top" secondItem="12G-7Z-3X1" secondAttribute="bottom" constant="25" id="INa-X1-tNV"/>
+                            <constraint firstAttribute="centerX" secondItem="W1J-T4-r3G" secondAttribute="centerX" id="PtW-qp-WqE"/>
+                            <constraint firstItem="AqE-D3-5bn" firstAttribute="top" secondItem="W1J-T4-r3G" secondAttribute="bottom" constant="25" id="Qas-39-HHh"/>
+                            <constraint firstItem="12G-7Z-3X1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="Z7v-gC-80K"/>
+                            <constraint firstAttribute="centerX" secondItem="AqE-D3-5bn" secondAttribute="centerX" id="aTj-70-7PU"/>
+                            <constraint firstAttribute="centerX" secondItem="9bo-vs-IgJ" secondAttribute="centerX" id="xVB-Hx-Tb9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Test MTStatusBarOverlay" id="bqd-be-YPH"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

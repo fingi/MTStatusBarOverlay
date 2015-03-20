@@ -1,6 +1,20 @@
 Read Me
 =====================
 
+Hlung's fork
+------
+
+- major refactor for iOS 7+ 
+  - remove old OS 6 style status bar background "hex" image
+  - remove old OS 6 style label shadow
+  - add ability to set custom text/background color, overriding default coloring that depends on UIStatusBarStyle
+- add demo project
+- add demo.gif
+
+![demo](demo.gif)
+
+-----------------
+
 **If you use MTStatusBarOverlay in your app, please drop me a line so that I can add your app here!**
 
 UIStatusBarStyleDefault (left: full size, right: shrinked)

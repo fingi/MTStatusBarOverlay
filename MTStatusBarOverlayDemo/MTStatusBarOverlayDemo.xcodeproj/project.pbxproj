@@ -41,8 +41,8 @@
 		E0FDEB2F1ABABBD800008E98 /* MTStatusBarOverlayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTStatusBarOverlayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FDEB341ABABBD800008E98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0FDEB351ABABBD800008E98 /* MTStatusBarOverlayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTStatusBarOverlayDemoTests.m; sourceTree = "<group>"; };
-		E0FDEB3F1ABABBFD00008E98 /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTStatusBarOverlay.h; path = ../../MTStatusBarOverlay.h; sourceTree = "<group>"; };
-		E0FDEB401ABABBFD00008E98 /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTStatusBarOverlay.m; path = ../../MTStatusBarOverlay.m; sourceTree = "<group>"; };
+		E0FDEB3F1ABABBFD00008E98 /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTStatusBarOverlay.h; path = ../MTStatusBarOverlay.h; sourceTree = "<group>"; };
+		E0FDEB401ABABBFD00008E98 /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTStatusBarOverlay.m; path = ../MTStatusBarOverlay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +66,8 @@
 		E0FDEB0D1ABABBD700008E98 = {
 			isa = PBXGroup;
 			children = (
+				E0FDEB3F1ABABBFD00008E98 /* MTStatusBarOverlay.h */,
+				E0FDEB401ABABBFD00008E98 /* MTStatusBarOverlay.m */,
 				E0FDEB181ABABBD700008E98 /* MTStatusBarOverlayDemo */,
 				E0FDEB321ABABBD800008E98 /* MTStatusBarOverlayDemoTests */,
 				E0FDEB171ABABBD700008E98 /* Products */,
@@ -84,8 +86,6 @@
 		E0FDEB181ABABBD700008E98 /* MTStatusBarOverlayDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E0FDEB3F1ABABBFD00008E98 /* MTStatusBarOverlay.h */,
-				E0FDEB401ABABBFD00008E98 /* MTStatusBarOverlay.m */,
 				E0FDEB1D1ABABBD700008E98 /* AppDelegate.h */,
 				E0FDEB1E1ABABBD700008E98 /* AppDelegate.m */,
 				E0FDEB201ABABBD700008E98 /* ViewController.h */,

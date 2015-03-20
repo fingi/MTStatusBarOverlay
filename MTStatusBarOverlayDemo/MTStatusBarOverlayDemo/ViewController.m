@@ -10,7 +10,7 @@
 #import "MTStatusBarOverlay.h"
 
 @interface ViewController ()
-
+@property (strong, nonatomic) MTStatusBarOverlay *overlay;
 @end
 
 @implementation ViewController
@@ -18,31 +18,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
-    overlay.animation = MTStatusBarOverlayAnimationFallDown;  // MTStatusBarOverlayAnimationShrink
-    overlay.detailViewMode = MTDetailViewModeHistory;         // enable automatic history-tracking and show in detail-view
-    overlay.customTextColor = [UIColor blackColor];
-    overlay.customBackgroundColor = [UIColor whiteColor];
+    self.overlay = [MTStatusBarOverlay sharedInstance];
+    self.overlay.animation = MTStatusBarOverlayAnimationFallDown;  // MTStatusBarOverlayAnimationShrink
+    self.overlay.detailViewMode = MTDetailViewModeHistory;         // enable automatic history-tracking and show in detail-view
 }
 
 - (IBAction)noInternet:(id)sender {
-    MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
-    [overlay postImmediateErrorMessage:@"No Internet Connection" duration:2 animated:YES];
+    self.overlay.customTextColor = [UIColor whiteColor];
+    self.overlay.customBackgroundColor = [UIColor colorWithRed:0.62 green:0.08 blue:0 alpha:1]; // dark red
+    [self.overlay postImmediateErrorMessage:@"No Internet Connection" duration:2 animated:YES];
 }
 
 - (IBAction)internetConnected:(id)sender {
-    MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
-    [overlay postFinishMessage:@"Internet Connected" duration:2 animated:YES];
+    self.overlay.customTextColor = [UIColor whiteColor];
+    self.overlay.customBackgroundColor = [UIColor colorWithRed:0.07 green:0.4 blue:0.25 alpha:1]; // dark green
+    [self.overlay postFinishMessage:@"Internet Connected" duration:2 animated:YES];
 }
 
 - (IBAction)reconnecting:(id)sender {
-    MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
-    [overlay postImmediateMessage:@"Reconnecting..." animated:YES];
+    self.overlay.customTextColor = [UIColor blackColor];
+    self.overlay.customBackgroundColor = [UIColor whiteColor];
+    [self.overlay postImmediateMessage:@"Reconnecting..." animated:YES];
 }
 
 - (IBAction)hideToast:(id)sender {
-    MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
-    [overlay hide];
+    [self.overlay hide];
 }
 
 @end

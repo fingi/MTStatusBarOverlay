@@ -37,7 +37,7 @@
 
 - (IBAction)reconnecting:(id)sender {
     self.overlay.customTextColor = [UIColor blackColor];
-    self.overlay.customBackgroundColor = [UIColor whiteColor];
+    self.overlay.customBackgroundColor = [UIColor colorWithRed:0.93 green:0.69 blue:0.16 alpha:1]; // light yellow
     [self.overlay postImmediateMessage:@"Reconnecting..." animated:YES];
 }
 

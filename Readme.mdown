@@ -1,15 +1,8 @@
-Read Me
-=====================
 
-Hlung's fork
-------
+MTStatusBarOverlay
+-----------------
 
-- major refactor for iOS 7+ 
-  - remove old OS 6 style status bar background "hex" image
-  - remove old OS 6 style label shadow
-  - add ability to set custom text/background color, overriding default coloring that depends on UIStatusBarStyle
-- add demo project
-- add demo.gif
+An easy to use, iOS 7+ styled, status bar overlay with customizable font/background color.
 
 ![demo](demo.gif)
 
@@ -18,8 +11,6 @@ Hlung's fork
 **If you use MTStatusBarOverlay in your app, please drop me a line so that I can add your app here!**
 
 UIStatusBarStyleDefault (left: full size, right: shrinked)
-
-![Default style](https://img.skitch.com/20101223-r1ddre3u4sjmn4htkqw3bhp84j.jpg "Default style")
 
 Description
 -----------------
@@ -83,7 +74,7 @@ Known Limitations
 * User interaction in detail view is not possible yet
 
 
-More Screenshots
+<!--More Screenshots
 ------------------------
 
 UIStatusBarStyleBlackOpaque (left: activity indicator, right: finished-indicator)
@@ -101,7 +92,7 @@ UIStatusBarStyleDefault, detail view visible
 UIStatusBarStyleBlackOpaque, Progress visible
 
 ![History tracking:](https://img.skitch.com/20110223-rm4mjnn7w2yp4qeuactjfiiah5.png "History tracking")
-
+-->
 
 MonoTouch
 ------------------------

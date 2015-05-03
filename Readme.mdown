@@ -6,6 +6,29 @@ An easy to use, iOS 7+ styled, status bar overlay with customizable font/backgro
 
 ![demo](demo.gif)
 
+
+Quick Demo
+----------
+
+Swift:
+```
+let overlay = MTStatusBarOverlay.sharedInstance()
+overlay.animation = MTStatusBarOverlayAnimationFallDown;  // MTStatusBarOverlayAnimationShrink
+overlay.detailViewMode = MTDetailViewModeHistory;         // enable automatic history-tracking and show in detail-view
+overlay.customTextColor = UIColor.whiteColor()
+overlay.customBackgroundColor = UIColor(red:0.07, green:0.4, blue:0.25, alpha:1) // dark green
+overlay.postFinishMessage("Internet Connected", duration: 2, animated: true)
+```
+
+Obj-C:
+```
+MTStatusBarOverlay *overlay = [MTStatusBarOverlay sharedInstance];
+overlay.animation = MTStatusBarOverlayAnimationFallDown;  // MTStatusBarOverlayAnimationShrink
+overlay.detailViewMode = MTDetailViewModeHistory;         // enable automatic history-tracking and show in detail-view
+overlay.customTextColor = [UIColor whiteColor];
+overlay.customBackgroundColor = [UIColor colorWithRed:0.07 green:0.4 blue:0.25 alpha:1]; // dark green
+[overlay postFinishMessage:@"Internet Connected" duration:2 animated:YES];
+```
 -----------------
 
 **If you use MTStatusBarOverlay in your app, please drop me a line so that I can add your app here!**

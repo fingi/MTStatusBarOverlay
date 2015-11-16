@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04E13861BFA526900C1D39F /* UIColor+TG.m in Sources */ = {isa = PBXBuildFile; fileRef = D04E13851BFA526900C1D39F /* UIColor+TG.m */; };
 		E0FDEB1C1ABABBD700008E98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FDEB1B1ABABBD700008E98 /* main.m */; };
 		E0FDEB1F1ABABBD700008E98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FDEB1E1ABABBD700008E98 /* AppDelegate.m */; };
 		E0FDEB221ABABBD700008E98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FDEB211ABABBD700008E98 /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D04E13841BFA526900C1D39F /* UIColor+TG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TG.h"; sourceTree = "<group>"; };
+		D04E13851BFA526900C1D39F /* UIColor+TG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TG.m"; sourceTree = "<group>"; };
 		E0FDEB161ABABBD700008E98 /* MTStatusBarOverlayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTStatusBarOverlayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FDEB1A1ABABBD700008E98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0FDEB1B1ABABBD700008E98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				E0FDEB261ABABBD700008E98 /* Images.xcassets */,
 				E0FDEB281ABABBD700008E98 /* LaunchScreen.xib */,
 				E0FDEB191ABABBD700008E98 /* Supporting Files */,
+				D04E13841BFA526900C1D39F /* UIColor+TG.h */,
+				D04E13851BFA526900C1D39F /* UIColor+TG.m */,
 			);
 			path = MTStatusBarOverlayDemo;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0FDEB221ABABBD700008E98 /* ViewController.m in Sources */,
+				D04E13861BFA526900C1D39F /* UIColor+TG.m in Sources */,
 				E0FDEB1F1ABABBD700008E98 /* AppDelegate.m in Sources */,
 				E0FDEB1C1ABABBD700008E98 /* main.m in Sources */,
 				E0FDEB411ABABBFD00008E98 /* MTStatusBarOverlay.m in Sources */,
@@ -420,6 +426,7 @@
 				E0FDEB3B1ABABBD800008E98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0FDEB3C1ABABBD800008E98 /* Build configuration list for PBXNativeTarget "MTStatusBarOverlayDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +435,7 @@
 				E0FDEB3E1ABABBD800008E98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

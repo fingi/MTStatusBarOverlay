@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MTStatusBarOverlay.h"
+#import "UIColor+TG.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) MTStatusBarOverlay *overlay;
@@ -25,19 +26,19 @@
 
 - (IBAction)noInternet:(id)sender {
     self.overlay.customTextColor = [UIColor whiteColor];
-    self.overlay.customBackgroundColor = [UIColor colorWithRed:0.62 green:0.08 blue:0 alpha:1]; // dark red
+    self.overlay.customBackgroundColor = [UIColor tg_statusBarDarkRed];
     [self.overlay postImmediateErrorMessage:@"No Internet Connection" duration:2 animated:YES];
 }
 
 - (IBAction)internetConnected:(id)sender {
     self.overlay.customTextColor = [UIColor whiteColor];
-    self.overlay.customBackgroundColor = [UIColor colorWithRed:0.07 green:0.4 blue:0.25 alpha:1]; // dark green
+    self.overlay.customBackgroundColor = [UIColor tg_statusBarDarkGreen];
     [self.overlay postFinishMessage:@"Internet Connected" duration:2 animated:YES];
 }
 
 - (IBAction)reconnecting:(id)sender {
     self.overlay.customTextColor = [UIColor blackColor];
-    self.overlay.customBackgroundColor = [UIColor colorWithRed:0.93 green:0.69 blue:0.16 alpha:1]; // light yellow
+    self.overlay.customBackgroundColor = [UIColor tg_statusBarLightYellow];
     [self.overlay postImmediateMessage:@"Reconnecting..." animated:YES];
 }
 
